@@ -2,11 +2,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/pickup_fragment"
+    android:id="@+id/order_fragment"
     android:layout_height="match_parent"
     android:background="@android:color/white"
+    android:orientation="horizontal"
     android:clickable="true"
-    tools:context="tw.com.qgas.www.qgaseasy.MainActivity$PickupFragment" >
+    tools:context="tw.com.qgas.www.qgasdriver.MainActivity$AllOrderFragment" >
 
 
 <RelativeLayout
@@ -18,7 +19,7 @@
     android:paddingTop="@dimen/activity_vertical_margin" >
 
     <ListView
-        android:id="@+id/pickup_list_view"
+        android:id="@+id/order_list_view"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_alignParentLeft="true"
@@ -28,13 +29,14 @@
         />
 
     <com.google.android.gms.maps.MapView
-        android:id="@+id/pickupmapView"
+        android:id="@+id/ordermapView"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/signborder" />
 
 </RelativeLayout>
 </FrameLayout>

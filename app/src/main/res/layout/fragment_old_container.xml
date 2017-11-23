@@ -1,0 +1,114 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/old_container_fragment"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:clickable="true"
+    tools:context="tw.com.qgas.www.qgasdriver.MainActivity$OldContainerFragment" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="tw.com.qgas.www.qgasdriver.MainActivity$InnerFragment">
+
+        <TextView
+            android:id="@+id/old_container_label"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/old_container_string"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/old_14kg_label"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/kg14_title"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/old_14kg_no"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="90dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/old_conatiner_list_14kg_view"
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:descendantFocusability="beforeDescendants" />
+
+        <TextView
+            android:id="@+id/old_20kg_label"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="190dp"
+            android:text="@string/kg20_title"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/old_20kg_no"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="220dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/old_conatiner_list_20kg_view"
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="180dp"
+            android:descendantFocusability="beforeDescendants" />
+
+        <Button
+            android:id="@+id/oldok_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="50dp"
+            android:onClick="ProcessNewClick"
+            android:text="@string/continue_string" />
+
+    </RelativeLayout>
+</FrameLayout>
