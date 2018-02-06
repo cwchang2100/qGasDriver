@@ -1855,49 +1855,48 @@ public class MainActivity extends TSLBluetoothDeviceActivity {
 
             mState = SUMMARY_VIEW;
 
-            mOld14 = oldrfidArrayList_14kg.size();
-            mOld20 = oldrfidArrayList_20kg.size();
-            mNew14 = newrfidArrayList_14kg.size();
-            mNew20 = newrfidArrayList_20kg.size();
-
-            mS14rNo.setText(String.valueOf(mOld14));
-
+            mOld14 = 0;
             String barcodes = "";
             for (GasContainer co : oldrfidArrayList_14kg) {
                 if (co.presented == 1) {
                     barcodes += co.barcode + " ";
+                    mOld14++;
                 }
             }
-
+            mS14rNo.setText(String.valueOf(mOld14));
             mS14rBarCode.setText(barcodes);
 
-            mS14iNo.setText(String.valueOf(mNew14));
+            mNew14 = 0;
             barcodes = "";
             for (GasContainer co : newrfidArrayList_14kg) {
                 if (co.presented == 1) {
                     barcodes += co.barcode + " ";
+                    mNew14++;
                 }
             }
+            mS14iNo.setText(String.valueOf(mNew14));
             mS14iBarCode.setText(barcodes);
 
-            mS20rNo.setText(String.valueOf(mOld20));
-
+            mOld20 = 0;
             barcodes = "";
             for (GasContainer co : oldrfidArrayList_20kg) {
                 if (co.presented == 1) {
                     barcodes += co.barcode + " ";
+                    mOld20++;
                 }
             }
-
+            mS20rNo.setText(String.valueOf(mOld20));
             mS20rBarCode.setText(barcodes);
 
-            mS20iNo.setText(String.valueOf(mNew20));
+            mNew20 = 0;
             barcodes = "";
             for (GasContainer co : newrfidArrayList_20kg) {
                 if (co.presented == 1) {
                     barcodes += co.barcode + " ";
+                    mNew20++;
                 }
             }
+            mS20iNo.setText(String.valueOf(mNew20));
             mS20iBarCode.setText(barcodes);
 
             if (mCurrentOrder != null) {
